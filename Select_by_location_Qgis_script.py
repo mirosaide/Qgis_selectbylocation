@@ -231,8 +231,8 @@ project = QgsProject.instance()
 project.removeAllMapLayers()
 
 ## inputs paths
-countries_path = '/home/mirosaide/Documents/Research_2021/FILES_QG/ne_10m_admin_0_countries.shp'
-ustowers_path = '/home/mirosaide/Documents/Research_2021/FILES_QG/world_cell_towers.gpkg'
+countries_path = 'path of the world map'
+ustowers_path = 'path of the mobile towers locations'
 ## Run layers
 countries = QgsVectorLayer(countries_path, 'World countries', 'ogr')
 us_towers = QgsVectorLayer(ustowers_path, 'US Cell Towers', 'ogr')
@@ -293,7 +293,7 @@ to_be_extracted = us_mainland_towers
 list_grids = range(1,34)
 d = QgsDistanceArea()
 d.setEllipsoid('WGS84')
-out_path = '/home/mirosaide/Documents/Research_2021/FILES_QG/ids/DADOS'
+out_path = 'output path of the data'
 create_gpkg_cells(list_grids,out_path)
 
 
@@ -310,7 +310,7 @@ def create_csv(folder):
    
     
 
-folder = '/home/mirosaide/Documents/Research_2021/FILES_QG/ids/DADOS'
+folder = 'output path of the folder'
 
 
 create_csv(folder)
