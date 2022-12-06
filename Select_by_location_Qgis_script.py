@@ -293,7 +293,7 @@ to_be_extracted = us_mainland_towers
 list_grids = range(1,34)
 d = QgsDistanceArea()
 d.setEllipsoid('WGS84')
-out_path = 'output path of the data'
+out_path = 'path of the output data'
 create_gpkg_cells(list_grids,out_path)
 
 
@@ -310,7 +310,7 @@ def create_csv(folder):
    
     
 
-folder = 'output path of the folder'
+folder = 'path of the folder that will contain the output data'
 
 
 create_csv(folder)
